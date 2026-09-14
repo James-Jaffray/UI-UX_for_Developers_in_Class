@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PixelQuest Gaming | Membership Plans</title>
+</head>
+<body>
+
+  <!-- The <header> element represents introductory content, typically a group of introductory or navigational aids.
+       It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
+  <header>
+    <img src="img/pixelquest-logo.webp" alt="PixelQuest Gaming logo"  width="400" height="250">
+    <h1>PixelQuest Gaming</h1>
+    <!-- the tagline uses the paragraph tag -->
+    <p>Level Up Your Play!</p>
+
+    <!-- wrap the hero image in an anchor; path from this file to the img folder is relative -->
+    <a href="#" target="_blank">
+      <img src="img/hero-gameplay.jpg"
+           alt="Exciting in-game battle scene">
+    </a>
+  </header>
+
+  <!-- The <main> element represents the dominant content of the <body> of a document.
+       The main content area consists of content that is directly related to or expands upon
+       the central topic of a document. -->
+  <main>
+
+    <h2>About PixelQuest</h2>
+    <p>PixelQuest Gaming is your gateway to epic adventures, PvP battles, and co-op quests—every day.</p>
+    <p>Join our community to access exclusive tournaments, in-game rewards, and custom leaderboards.</p>
+
+    <!-- note: the border attribute is deprecated (not recommended) and will cause an error in the validator,
+         however, we are using it here until we start CSS for styling. -->
+    <h2>Membership Plans &amp; Pricing</h2>
+    <table border="1">
+      <!-- rows in tables read left to right -->
+      <caption>Choose Your Adventure</caption>
+      <!-- the table caption element
+           https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption -->
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Perks</th>
+          <th>Monthly Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rookie</td>
+          <td>Access to Free Quests, Basic Leaderboards</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Champion</td>
+          <td>All Quests, Priority Matchmaking, 5% XP Boost</td>
+          <td>$4.99</td>
+        </tr>
+        <tr>
+          <td>Legend</td>
+          <td>Champion Perks + Exclusive Skins &amp; Events</td>
+          <td>$9.99</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <!-- A <footer> typically contains information about the author of the section,
+       copyright data or links to related documents. -->
+  <footer>
+    <h2>Contact Us</h2>
+
+    <!-- Note: use a line break <br> inside an address tag to create a break in the block of text.
+         However line breaks are not used to create space between other items in HTML.
+         See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br -->
+    <address>
+      support@pixelquest.gg<br>
+      123 Gamer Lane<br>
+      Toronto, ON<br>
+      M5V 2B6
+    </address>
+
+    <!-- try using: &copy; for the copyright symbol -->
+    <p>&copy; 2025 PixelQuest Gaming</p>
