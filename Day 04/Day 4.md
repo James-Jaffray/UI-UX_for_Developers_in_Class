@@ -1,23 +1,25 @@
-<table> defines an HTML
-<tr>: defines each table row
-<th> / <td> Define the tables headers and data cells
+---
+aliases: [UI-UX for Developers - Day 04]
+tags: [ui-ux-for-developers, term1]
+course: "[[UI-UX for Developers]]"
+---
 
+# UI-UX for Developers — Day 4: HTML Tables & the DOM
 
-- figure 
-- table
-- sectioning
-Are big for the exams
+## [[HTML Tables]]
+- `<table>` — defines an HTML table
+- `<tr>` — defines each table row
+- `<th>` / `<td>` — table headers and data cells
+- `<thead>` — separate table header
+- `<tbody>` — main body of the table
+- `<tfoot>` — separate table footer
+- `<caption>` — table title (auto-centers)
+- `colspan="3"` — a cell spans 3 columns
 
+> **Exam focus:** figure, table, and sectioning elements
 
-<thead> creater seperate table header
-<tbody> to indicate the main body of the table
-<tfoot>  to create a separate table footer
+## Other Elements
+- `<address>` — tag for contact information
 
-
-<caption> tag will serve as title (auto centers)
-
-colspan="3" means cells will span 3 columns
-
-<address> tag for contact information
-
-DOM - Document object model
+## [[Document Object Model|DOM]]
+DOM = Document Object Model
