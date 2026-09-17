@@ -3,5 +3,7 @@
 ## Topic
 
 ## Homework
+- Revisit netify
+
 
 ## Key Terms
