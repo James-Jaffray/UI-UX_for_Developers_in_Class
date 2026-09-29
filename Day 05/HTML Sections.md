@@ -1,119 +1,69 @@
-# Day 5
+---
+aliases: [UI-UX for Developers - Day 05]
+tags: [ui-ux-for-developers, term1, html]
+course: "[[UI-UX for Developers]]"
+---
 
-## Topic: Sections
+# UI-UX for Developers — Day 5: HTML Sections
 
-Headings (<h1>–<h6>) communicate hierarch
+**Today's focus:** use semantic sectioning elements to give a page a clear, SEO-friendly outline.
 
-Search engines use HTML structure to understand what a page
-is about.
-• A well-structured page with clear headings and meaningful
-sections ranks better.
-• <main>, <header>, <nav>, <article>, and <footer> help bots
-index your page more effectively
+## [[Semantic HTML|HTML Structure]]
+The semantic outline of a webpage — how elements like headings, paragraphs, images, navigation, and sections are organized and nested. Headings (`<h1>`–`<h6>`) communicate hierarchy.
 
-HTML5 Outliner - 
-What it does:
-• Displays how your document is structured by headings
-	and sectioning elements
-• Shows where headings are missing
-• Flags untitled section
+**Why it matters (SEO):** search engines use HTML structure to understand what a page is about. A well-structured page with clear headings and meaningful sections ranks better, and `<main>`, `<header>`, `<nav>`, `<article>`, and `<footer>` help bots index the page more effectively. Semantic structure also lets browsers and assistive tech interpret pages more clearly (see [[Inclusive Design and WCAG]]).
 
+## Elements
+Already known: `<header>` (intro and page title), `<main>` (main content), `<footer>` (closing info and contact).
 
-What is a section:
-- Use <section> to group content
-that belongs together
+New today:
 
-- Every section must include a
-heading
+| Element | Use |
+|---|---|
+| `<nav>` | Groups navigational links |
+| `<section>` | Thematic grouping of content that belongs together. **Every section must include a heading.** Don't use it as a generic wrapper — use `<div>` for that |
+| `<article>` | Standalone, reusable content that could be syndicated (e.g. a blog post or product feature) |
+| `<aside>` | Side content that supports the main area: pull quotes, related links, definitions, ads or widgets. Can have a heading, doesn't require one |
 
-- Avoid using <section> as a
-generic wrapper — use <div>
-for that
+**Article vs Section:** use `<article>` when the content is standalone; use `<section>` when the content is related and contributes to the page's topic.
 
+**Nesting:** sections can be nested inside other sections (big deal) — every nested section still needs a heading.
 
-Article Vs Section
-- Use <article> when content is standalone and could be
-syndicated (like a blog post or product feature
+### Outlines
+- **Explicit** — created using semantic elements (`<section>`, `<article>`, etc.)
+- **Implicit** — created only using headings (`<h1>`–`<h6>`)
 
-- Use <section> when content is related and contributes to
-the page's topic
+**HTML5 Outliner** — a tool that shows how your document is structured by headings and sectioning elements, where headings are missing, and flags untitled sections. Use it to find nesting mistakes.
 
-<aside>
-• Pull quotes
-• Related links
-• Definitions
-• Ads or widgets
-It can have a heading, but it
-doesn’t require one.
-
-
- Explicit: Created using semantic elements (<section>,
-<article>, etc.)
-• Implicit: Created only using headings (<h1> to <h6>)
-Semantic structure allows browsers and assistive tech to
-interpret pages more clearly.
-
-Nesting:
-- You can nest sections inside other Sections (Big DEAL)
-- Every nested section still needs a header
-
+## Navigation
+```html
 <nav>
-	<ul>
-		<li><anchor></li>
-		<li><anchor></li>
-		<li><anchor></li>
-		<li><anchor></li>
-	</ul>
+  <ul>
+    <li><a href="...">...</a></li>
+    <li><a href="...">...</a></li>
+    <li><a href="...">...</a></li>
+    <li><a href="...">...</a></li>
+  </ul>
 </nav>
+```
+`<nav>` is also used for social media links near the footer.
 
-Navigator is also used in social media links near footer
+**Tips**
+- Always use relative links between pages when working locally
+- Test your links before uploading
+- Use meaningful link text (no "click here")
 
-NAVIGATION TIPS
-✅ Always use relative links between pages when working
-locally
-✅ Test your links before uploading
-✅ Use meaningful link text (no "click here")
+## [[Document Object Model|DOM]] Structure Example
+- `<body>` is the parent
+- `<header>`, `<main>`, `<footer>` are siblings
+- `<main>` has children: `<h2>` and `<p>`
 
-DOM Structure Example
-
-- Hierarchy:
-	- <body> is the parent
-	- <header>, <main>, <footer> are siblings
-	- <main> has children: <h2> and <p>
-
-
+## To Know
+- Every `<section>` needs a heading; use `<div>` for generic wrapping
+- Run pages through the HTML5 Outliner to catch nesting mistakes
 
 ## Homework
+- Lesson 6 homework: multi-page site (`index.html` + `services.html`) — see the `HOMEWORK` folder
 
-## Key Terms
-
-HTML structure - is the semantic outline of a webpage—how
-elements like headings, paragraphs, images, navigation, and
-sections are organized and nested.
-
-<section>, <article>, <nav> define logical regions of content
-
-
-HTML5 Outliner - tool that will help you find your nesting mistakes
-
-
-
-<header> — Intro and page title
-<main> — Main content
-<footer> — Closing info and contact
-Today we add:
-✅ <nav> – Groups navigational links
-✅ <section> – Thematic grouping of content
-✅ <article> – Standalone, reusable content
-✅ <aside> – Side content that supports the main area
-
-Explicit Outlines - Created using semantic elements (<section>,
-<article>, etc.)
-
-Implicit outlines - Created only using headings (<h1> to <h6>)
-
-
-<nav> - to group site navigation link
-
-
-
+## Reflection
+*What was the most surprising insight today?*

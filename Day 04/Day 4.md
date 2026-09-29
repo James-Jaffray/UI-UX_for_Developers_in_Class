@@ -6,6 +6,8 @@ course: "[[UI-UX for Developers]]"
 
 # UI-UX for Developers — Day 4: HTML Tables & the DOM
 
+**Today's focus:** build data tables with the right semantic elements and start on the DOM.
+
 ## [[HTML Tables]]
 - `<table>` — defines an HTML table
 - `<tr>` — defines each table row
@@ -23,3 +25,12 @@ course: "[[UI-UX for Developers]]"
 
 ## [[Document Object Model|DOM]]
 DOM = Document Object Model
+
+## To Know
+- Figure, table, and sectioning elements are flagged as exam topics
+
+## Homework
+- HTML table exercise (see the `lesson4-homework exercise` folders)
+
+## Reflection
+*What was the most surprising insight today?*
