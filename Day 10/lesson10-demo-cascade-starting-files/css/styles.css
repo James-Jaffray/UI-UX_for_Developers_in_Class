@@ -1,0 +1,99 @@
+/* Check out the specificity (calculated weight) of the selector by hovering over it. */
+
+/* Element Selectors */
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul {
+    background-color: rgba(55, 52, 52, 0.472);
+}
+
+main {
+    background-color: rgb(2, 47, 47);
+    padding: 1rem;
+}
+
+footer {
+    background-color: rgba(55, 52, 52, 0.472);
+}
+
+a {
+    color: rgb(146, 55, 243);
+    /* this changes the olor of the links */
+    text-decoration: none;
+    /* the underline is a text decoration - so 'none' removes that */
+}
+
+/* Multiple Element Selectors */
+h1,
+h2,
+p {
+    color: rgb(145, 227, 227)
+}
+
+/* Descendant Selectors */
+footer h2 {
+    color: rgb(247, 80, 80)
+}
+
+nav ul {
+    background-color: rgb(65, 100, 90);
+}
+
+nav ul li {
+    border-bottom-width: 0.125rem;
+    border-bottom-style: dashed;
+    border-bottom-color: black;
+    border-bottom: .125 dashed black; /* this is just the two lines above condensed into one line */
+}
+
+nav ul li a {
+    color: rgb(247, 80, 80);
+    font-weight: normal;
+}
+
+
+
+/* Class Selectors */
+.navigation {
+    list-style-type: none;
+    padding-top: .625rem;
+    padding-right: .625rem;
+    padding-bottom: .625rem;
+    padding-left: 3.125rem;
+    padding: .625rem .625rem .625rem 3.125rem;
+    /* PADDING NEEDS TO BE CLOCKWISE: this is just the 4 lines above condensed into one line */
+    margin-bottom: 3rem;
+    margin: 2rem 3rem;
+    /* 2rem is top and bottom - 3rem is left/right */
+}
+
+
+
+/* Descendant Combinator */
+ul.navigation li {
+    padding: .3125rem;
+}
+
+/* Pseudo Class Selector */
+header nav ul li a:hover {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-decoration: underline;
+    padding-left: .3125rem;
+}
+
+a:focus {
+    outline: 0.125 solid rgb(30, 145, 245);
+}
+
+footer ul li a:hover {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-decoration: underline;
+    padding-left: .3125rem;
+}

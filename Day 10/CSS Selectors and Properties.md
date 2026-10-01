@@ -8,6 +8,8 @@ course: "[[UI-UX for Developers]]"
 
 **Today's focus:** how CSS decides which rule wins ([[CSS Cascade and Specificity|cascade & specificity]] and [[CSS Inheritance|inheritance]]), plus [[CSS Pseudo-Classes|pseudo-classes]] (`:hover`, `:focus`) and styling choices that keep a site usable.
 
+**Demo:** [[Coffee Cup Demo Walkthrough]] · **Reference:** [[Pseudo-Classes Reference]]
+
 ## The Cascade (refresher)
 "Cascading" = rules can overwrite each other. When several rules hit the same element:
 1. **Later beats earlier** — but only if specificity is equal
@@ -68,7 +70,7 @@ body {
 > Rule of thumb: **text styles inherit, box/layout styles don't.**
 
 ## Pseudo-Classes
-Style an element based on its *state*.
+Style an element based on its *state*. Full list with examples: [[Pseudo-Classes Reference]].
 
 | Pseudo-class | When it applies |
 |---|---|
