@@ -1,0 +1,9 @@
+
+/* browsers add default styling and sizing through their user agent stylesheet */
+body {
+    background-color: rgb(132, 157, 152);
+}
+.inner-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
