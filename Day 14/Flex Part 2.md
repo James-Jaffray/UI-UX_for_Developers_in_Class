@@ -12,6 +12,19 @@ course: "[[UI-UX for Developers]]"
 
 ## To Know
 - 
+current terms:
+- Display Flex
+- align items
+- flex-directions
+- flex-wrap
+- gap
+	- column-gap (space between columns)
+	- row-gap (space between rows)
+- calc() - function
+- height: auto;
+- 
+
+
 
 ## Homework
 - 

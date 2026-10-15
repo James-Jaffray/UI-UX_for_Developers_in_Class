@@ -1,0 +1,45 @@
+
+body {
+  background-color: #eff6ff;
+}
+
+/* Centers content and constrains to a readable max-width */
+.inner-container {
+  max-width: 960px;    
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* Flex container: makes its children flex items */
+.flex-container {
+  display: flex;       /* turns on flex layout */
+  flex-wrap: wrap;     /* ALLOWS items to wrap onto new lines when needed */
+  gap: 1rem;           /* space between flex items */
+}
+
+
+header {
+  padding: 1rem;
+}
+
+/* Each section inside .flex-container */
+/* We want two per row, minus the gap. */
+/* width = (100% / 2) – gap */
+/* calc((100% / 2) – 1rem) ensures each item is half the container minus the 1rem gap */
+main div section {
+  width: calc((100% / 2) - 1rem);
+  border: .125rem solid #64748b;
+  padding: 1rem;
+}
+
+/* Example of other section outside flex */
+section {
+  border: .125rem solid #64748b;
+  padding: 1rem;
+}
+
+/* Explanation of calc(): 
+   - 100%/2 computes half the container’s width.
+   - Subtracting 1rem compensates for the gap between items,
+     so two items sit side by side without overflowing.
+*/

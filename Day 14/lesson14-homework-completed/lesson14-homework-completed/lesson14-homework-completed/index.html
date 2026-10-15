@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Layout | Home</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="inner-container">
+    <header>
+      <h1>CSS Layout - 101</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Box Layout Models</h2>
+        <p>
+          CSS provides different layout models to control the positioning and flow of elements on a web page.
+        </p>
+
+        <!--
+          .flex-container is a flexbox parent.
+          Its direct children (<section> elements) become flex items.
+          Because we’ve set flex-wrap: wrap, when there isn’t enough horizontal
+          space, items will wrap onto the next line automatically.
+        -->
+        <div class="flex-container">
+          <section>
+            <h3>Block Layout</h3>
+            <p>
+              This model treats each element as a block-level box that occupies the entire width of its
+              parent container by default. Block-level elements stack vertically, one after another, and you
+              can control their width, height, margins, and positioning.
+            </p>
+          </section>
+          <section>
+            <h3>Inline Layout</h3>
+            <p>
+              In this model, elements are treated as inline boxes that flow horizontally within the text
+              content. Inline elements do not break onto new lines by default and are typically used for
+              text or smaller elements like links and spans.
+            </p>
+          </section>
+          <section>
+            <h3>Flexbox Layout</h3>
+            <p>
+              The flexbox layout model is designed for one-dimensional layouts, either horizontally or
+              vertically. It allows you to create flexible and responsive layouts by distributing space and
+              aligning elements within a container.
+            </p>
+          </section>
+          <section>
+            <h3>Grid Layout</h3>
+            <p>
+              The CSS grid layout model enables you to create complex two-dimensional layouts with rows and
+              columns. It provides precise control over element placement and sizing within a grid container.
+            </p>
+          </section>
+        </div><!-- /.flex-container -->
+
+      </section>
+    </main>
+  </div><!-- /.inner-container -->
+</body>
+
+</html>
