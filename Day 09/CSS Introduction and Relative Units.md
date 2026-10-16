@@ -1,7 +1,8 @@
 ---
 aliases: [UI-UX for Developers - Day 09]
-tags: [ui-ux-for-developers, term1, css]
+tags: [ui-ux-for-developers, term1, lecture-notes, css]
 course: "[[UI-UX for Developers]]"
+day: 9
 ---
 
 # UI-UX for Developers — Day 9: CSS Introduction & Relative Units

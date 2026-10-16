@@ -1,14 +1,15 @@
 ---
 aliases: [UI-UX for Developers - Day 13]
-tags: [ui-ux-for-developers, term1, css, flexbox]
+tags: [ui-ux-for-developers, term1, lecture-notes, css, flexbox]
 course: "[[UI-UX for Developers]]"
+day: 13
 ---
 
 # UI-UX for Developers — Day 13: Flexbox Introduction
 
 **Today's focus:** getting boxes to sit **side by side** with [[Flexbox]] — what it is, turning it on with `display: flex`, and lining items up with `justify-content`, `align-items`, and `gap`.
 
-**Cheatsheet:** [[Flex Cheatsheet]]
+**Cheatsheet:** [[Flexbox Cheat Sheet|Flex Cheatsheet]]
 
 ## Why Flexbox?
 - So far every page has been **one long column** of content, but real sites have multiple columns

@@ -1,12 +1,13 @@
 ---
 aliases: [Pseudo-Classes Reference, CSS pseudo-class cheat sheet]
-tags: [ui-ux-for-developers, term1, css, reference]
+tags: [ui-ux-for-developers, term1, reference, css, pseudo-classes]
 course: "[[UI-UX for Developers]]"
+day: 10
 ---
 
 # Pseudo-Classes Reference
 
-A **pseudo-class** styles an element based on its *state* or *position* — things you can't target with a class in the HTML. It's written with **one colon** after a selector: `selector:pseudo-class { ... }`. Concept summary: [[CSS Pseudo-Classes]]. From [[UI-UX for Developers - Day 10]].
+A **pseudo-class** styles an element based on its *state* or *position* — things you can't target with a class in the HTML. It's written with **one colon** after a selector: `selector:pseudo-class { ... }`. Concept summary: [[CSS Pseudo-Classes]]. From [[CSS Selectors and Properties|Day 10]].
 
 ★ = covered in class
 

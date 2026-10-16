@@ -1,12 +1,13 @@
 ---
 aliases: [Day 10 Demo, Coffee Cup Demo]
-tags: [ui-ux-for-developers, term1, css, demo]
+tags: [ui-ux-for-developers, term1, demo, css, cascade]
 course: "[[UI-UX for Developers]]"
+day: 10
 ---
 
 # Day 10 Demo: The Coffee Cup Cascade
 
-In-class demo for [[UI-UX for Developers - Day 10]]. One stylesheet (`css/styles.css`) styling the Coffee Cup page, built to show [[CSS Selectors|selector types]] and how [[CSS Cascade and Specificity|specificity]] settles conflicts.
+In-class demo for [[CSS Selectors and Properties|Day 10]]. One stylesheet (`css/styles.css`) styling the Coffee Cup page, built to show [[CSS Selectors|selector types]] and how [[CSS Cascade and Specificity|specificity]] settles conflicts.
 
 ## The Page Structure (what the selectors hit)
 ```

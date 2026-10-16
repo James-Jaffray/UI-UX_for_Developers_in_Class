@@ -1,7 +1,8 @@
 ---
 aliases: [UI-UX for Developers - Day 02]
-tags: [ui-ux-for-developers, term1, html]
+tags: [ui-ux-for-developers, term1, lecture-notes, html]
 course: "[[UI-UX for Developers]]"
+day: 2
 ---
 
 # UI-UX for Developers — Day 2: HTML Markup Basics

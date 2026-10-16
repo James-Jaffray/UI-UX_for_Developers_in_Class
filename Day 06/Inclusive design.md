@@ -1,7 +1,8 @@
 ---
 aliases: [UI-UX for Developers - Day 06]
-tags: [ui-ux-for-developers, term1, accessibility]
+tags: [ui-ux-for-developers, term1, lecture-notes, accessibility, wcag]
 course: "[[UI-UX for Developers]]"
+day: 6
 ---
 
 # UI-UX for Developers — Day 6: Inclusive Design

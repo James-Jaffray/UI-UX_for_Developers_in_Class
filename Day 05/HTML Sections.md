@@ -1,7 +1,8 @@
 ---
 aliases: [UI-UX for Developers - Day 05]
-tags: [ui-ux-for-developers, term1, html]
+tags: [ui-ux-for-developers, term1, lecture-notes, html, semantic-html]
 course: "[[UI-UX for Developers]]"
+day: 5
 ---
 
 # UI-UX for Developers — Day 5: HTML Sections

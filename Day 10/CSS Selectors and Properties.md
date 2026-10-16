@@ -1,14 +1,15 @@
 ---
 aliases: [UI-UX for Developers - Day 10]
-tags: [ui-ux-for-developers, term1, css]
+tags: [ui-ux-for-developers, term1, lecture-notes, css, selectors]
 course: "[[UI-UX for Developers]]"
+day: 10
 ---
 
 # UI-UX for Developers — Day 10: CSS Selectors and Properties (Part I)
 
 **Today's focus:** how CSS decides which rule wins ([[CSS Cascade and Specificity|cascade & specificity]] and [[CSS Inheritance|inheritance]]), plus [[CSS Pseudo-Classes|pseudo-classes]] (`:hover`, `:focus`) and styling choices that keep a site usable.
 
-**Demo:** [[Coffee Cup Demo Walkthrough]] · **Reference:** [[Pseudo-Classes Reference]]
+**Demo:** [[Coffee Cup Demo|Coffee Cup Demo Walkthrough]] · **Reference:** [[Pseudo-Classes Reference]]
 
 ## The Cascade (refresher)
 "Cascading" = rules can overwrite each other. When several rules hit the same element:

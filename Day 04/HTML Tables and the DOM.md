@@ -1,7 +1,8 @@
 ---
 aliases: [UI-UX for Developers - Day 04]
-tags: [ui-ux-for-developers, term1]
+tags: [ui-ux-for-developers, term1, lecture-notes, html, dom]
 course: "[[UI-UX for Developers]]"
+day: 4
 ---
 
 # UI-UX for Developers — Day 4: HTML Tables & the DOM

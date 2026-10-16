@@ -1,10 +1,10 @@
 ---
-aliases: [UI-UX for Developers - Day 24]
-tags: [ui-ux-for-developers, term1]
+tags: [ui-ux-for-developers, term1, placeholder]
 course: "[[UI-UX for Developers]]"
+day: 20
 ---
 
-# UI-UX for Developers — Day 24: 
+# UI-UX for Developers — Day 20: 
 
 **Today's focus:** 
 

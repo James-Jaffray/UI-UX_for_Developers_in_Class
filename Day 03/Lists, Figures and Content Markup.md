@@ -1,7 +1,8 @@
 ---
 aliases: [UI-UX for Developers - Day 03]
-tags: [ui-ux-for-developers, term1, html]
+tags: [ui-ux-for-developers, term1, lecture-notes, html]
 course: "[[UI-UX for Developers]]"
+day: 3
 ---
 
 # UI-UX for Developers — Day 3: Lists, Figures & Content Markup
