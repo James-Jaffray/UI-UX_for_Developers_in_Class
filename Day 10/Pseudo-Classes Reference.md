@@ -1,6 +1,6 @@
 ---
-aliases: [Pseudo-Classes Reference, CSS pseudo-class cheat sheet]
-tags: [ui-ux-for-developers, term1, reference, css, pseudo-classes]
+aliases: [Pseudo-Classes Reference, CSS pseudo-class reference sheet]
+tags: [ui-ux-for-developers, term1, reference, reference-sheet, css, pseudo-classes]
 course: "[[UI-UX for Developers]]"
 day: 10
 ---

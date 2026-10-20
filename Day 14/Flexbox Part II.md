@@ -7,7 +7,7 @@ day: 14
 
 # UI-UX for Developers — Day 14: Flexbox Part II
 
-**Today's focus:** `flex-direction`, `flex-wrap`, `gap`, `calc()` for layout maths, and making images responsive. Follows [[Flexbox Introduction]]; quick lookup in [[Flexbox Cheat Sheet]]. Concept page: [[Flexbox]].
+**Today's focus:** `flex-direction`, `flex-wrap`, `gap`, `calc()` for layout maths, and making images responsive. Follows [[Flexbox Introduction]]; quick lookup in [[Flexbox Reference Sheet]]. Concept page: [[Flexbox]].
 
 ## Recap (Day 13)
 - `display: flex` on the container turns its children into flex items
@@ -60,7 +60,7 @@ Four cards per row, 1rem gaps:
 - Subtract the gap space from the full width, then divide what's left equally among the 4 cards
 - Fluid and responsive, no hard-coded pixel sizes
 
-Mixing units inside `calc()` is the point (`%` with `rem`, `px`…). Put spaces around `+` and `-`. See [[Relative Units]].
+Mixing units inside `calc()` is the point (`%` with `rem`, `px`…). Put spaces around `+` and `-`. See [[Relative Units]] and [[CSS calc() Reference Sheet]].
 
 ## Responsive Images
 ```css

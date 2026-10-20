@@ -1,0 +1,84 @@
+/* Base font & container */
+/* 1rem = 16px */
+/* Universal Styles */
+body {
+ font-family: "Comic Neue", cursive;;
+}
+/* Utility Classes */
+.inner-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+/* Typography */
+h1, h2, h3 {
+  font-family: "Comic Neue", cursive;;
+}
+/* header */
+header {
+  margin: 1.5rem 0;
+   background-color: #b2cede;
+}
+header nav ul {
+  display: flex;
+  gap: 1.5rem;
+   
+}
+header .flex-container {
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul li a,
+footer a {
+  color: black;
+  text-decoration: none;
+}
+header nav ul li a:hover,
+header nav ul li a:focus,
+footer a:hover,
+footer a:focus {
+  color: white;
+  text-decoration: underline;
+}
+/* main */
+.lake-vacations {
+  margin-bottom: 1.5rem;
+}
+.lake-vacations section {
+  border: 0.0625rem solid #000;
+  background-color: white;
+  padding: 1.25rem;
+  width: calc((100% / 3) - (3rem / 3));
+}
+section img {
+  margin-bottom: 1.5rem;
+}
+.lake-vacations section:last-child {
+  background-color: #76eebc;
+  width: 65.5%;
+}
+ 
+.lake-vacations section:nth-child(3) {
+   background-color: #dfdfdf;
+}
+.lake-vacations section:nth-child(even) {
+  background-color: #b2cede;
+}
+/* Footer */
+footer {
+   background-color: #b2cede;
+   padding: 1rem 0;
+}
+footer ul {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+}
+ 
+ 
+ 

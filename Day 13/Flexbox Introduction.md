@@ -9,7 +9,7 @@ day: 13
 
 **Today's focus:** getting boxes to sit **side by side** with [[Flexbox]] — what it is, turning it on with `display: flex`, and lining items up with `justify-content`, `align-items`, and `gap`.
 
-**Cheatsheet:** [[Flexbox Cheat Sheet|Flex Cheatsheet]]
+**Reference Sheet:** [[Flexbox Reference Sheet]]
 
 ## Why Flexbox?
 - So far every page has been **one long column** of content, but real sites have multiple columns

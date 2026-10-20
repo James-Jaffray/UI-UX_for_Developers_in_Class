@@ -1,11 +1,11 @@
 ---
-aliases: [Flex Cheatsheet, Flexbox Cheat Sheet]
-tags: [ui-ux-for-developers, term1, cheat-sheet, css, flexbox, reference]
+aliases: [Flex Reference Sheet, Flexbox Reference Sheet]
+tags: [ui-ux-for-developers, term1, reference-sheet, css, flexbox, reference]
 course: "[[UI-UX for Developers]]"
 day: 13
 ---
 
-# Flexbox Cheatsheet
+# Flexbox Reference Sheet
 
 Quick lookup for [[Flexbox]]. Full explanation in [[Flexbox Introduction|Day 13]].
 
