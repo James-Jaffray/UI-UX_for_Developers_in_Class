@@ -1,20 +1,8 @@
 ---
-tags: [ui-ux-for-developers, term1, placeholder]
+aliases: [Day 17 (UI-UX)]
+tags: [ui-ux-for-developers, term1, redirect]
 course: "[[UI-UX for Developers]]"
 day: 17
 ---
 
-# UI-UX for Developers — Day 17: 
-
-**Today's focus:** 
-
-## 
-
-## To Know
-- 
-
-## Homework
-- 
-
-## Reflection
-*What was the most surprising insight today?*
+Moved: see [[Colour Theory for the Web]], [[User Flows and Information Architecture]] and [[Low-Fidelity Wireframes]].

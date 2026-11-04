@@ -1,0 +1,105 @@
+/* Base font & container */
+/* 1rem = 16px */
+/* Universal Styles */
+body {
+    background-color: white;
+    font-family: "Lora", serif;
+    font-size: .875rem;
+}
+/* Utility Classes */
+.inner-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.flex-container {
+  display: flex;
+  gap: 0.5rem;
+}
+/* Typography */
+h1, h2, header p, li {
+  font-family: "Oswald", sans-serif;
+}
+/* header */
+h1, header p {
+    color: white;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: #0119B8;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+
+footer li {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.125rem;
+}
+
+header .flex-container:first-child {
+    width: 100%;
+
+    background-color: #92BEBF;
+    background-image: url(../img/banner.jpg);
+    height: 26rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header section.inner-container{
+    margin: 9.4rem 4rem;
+}
+/* main */
+main {
+    padding: 3rem 3.75rem;
+
+}
+
+main section .flex-container {
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+main section .flex-container img {
+    width: 16rem;
+}
+
+main section .flex-container div .flex-container img{
+    width: 3.125rem;
+}
+
+main section .flex-container h2 {
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+section p {
+    padding-top: 1rem;
+    background-color: #92BEBF;
+}
+
+/* Footer */
+footer {
+   background-color: #b2cede;
+   padding: 1rem 0;
+}
+footer ul {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+}
