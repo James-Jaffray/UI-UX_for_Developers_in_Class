@@ -18,3 +18,8 @@ day: 22
 
 ## Reflection
 *What was the most surprising insight today?*
+
+
+
+
+Hero images have to be under 250kb for a good lighthouse score

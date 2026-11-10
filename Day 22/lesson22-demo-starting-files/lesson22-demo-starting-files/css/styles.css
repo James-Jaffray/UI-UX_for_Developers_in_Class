@@ -1,0 +1,101 @@
+/* Universal Styles */
+
+:root{
+    --color-primary-background: rgba(192, 141, 98, 1);
+    --header-background: black;
+    --text-white: white;
+    --text-white: black;
+    --text-brown-hover: rgba(152, 66, 31, 1);
+    --veil-color: rgba(192, 141, 98, 0.2);
+    --text-hover: rgba(239, 219, 175, 1);
+
+    --font-body: "Rethink Sans", sans-serif;
+    --font-heading: "Righteous", sans-serif;
+    --fs-header-nav: 1.125rem;
+    --fs-h1: 1.75rem;
+    --fs-h2: 2.75rem;
+    --fw-normal: 400;
+
+    --gap-header-nav: 1.56rem;
+    --gap-logo-nav: 1.25rem;
+
+        /* Spacing */
+    --spacer-xs: 0.25rem;
+    --spacer-sm: 0.5625rem;
+    --spacer-md: 0.625rem;
+    --spacer-lg: 0.8125rem;
+    --spacer-xl: 0.875rem;
+    --spacer-2xl: 1.1875rem;
+    --spacer-3xl: 1.25rem;
+    --spacer-4xl: 1.5625rem;
+    --spacer-5xl: 2rem;
+    --spacer-6xl: 2.5rem;
+    --spacer-7xl: 3rem;
+    --spacer-8xl: 7.25rem;
+    --spacer-9xl: 28rem;
+    --spacer-10xl: 31rem;
+ 
+}
+
+body{
+    background-color: var(--color-primary-background);
+    font-family: var(--font-body);
+    font-weight: var(--fw-normal);
+    background-image: url("../img/repeating-tile-background-image.png");
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: repeat;
+
+}
+
+a,
+img {
+    display: inline-block;
+}
+
+.inner-container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-header-nav);
+}
+
+/* Typography */
+
+h1 {
+    font-size: var(--fs-h1);
+    color: var(--text-white);
+    font-family: var(--font-heading);
+    font-weight: var(--fw-normal);
+
+}
+h2 {
+    font-family: var(--font-heading);
+    font-weight: var(--fw-normal);
+    color: var(--text-brown-hover);
+    font-size: var(--fs-h2);
+    padding-top: var(--spacer-2xl);
+}
+
+/* Navigation */
+header {
+    background-color: var(--header-background);
+    padding: var(--spacer-md) var(--spacer-5xl) var(--spacer-md) var(--spacer-xl);
+}
+header nav a {
+    font-size: var(--fs-header-nav);
+    font-weight: var(--fw-normal);
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+
+header nav a:hover {
+    color: var(--text-brown-hover);
+}
