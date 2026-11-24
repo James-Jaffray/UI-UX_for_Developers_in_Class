@@ -34,7 +34,6 @@
     --spacer-8xl: 7.25rem;
     --spacer-9xl: 28rem;
     --spacer-10xl: 31rem;
- 
 }
 
 body{
@@ -45,7 +44,6 @@ body{
     background-repeat: repeat-x;
     background-repeat: repeat-y;
     background-repeat: repeat;
-
 }
 
 a,
@@ -99,3 +97,60 @@ header nav a {
 header nav a:hover {
     color: var(--text-brown-hover);
 }
+
+/* banner */
+section {
+    background-color: var(--color-primary-background);
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+/* Vertical Menu */
+
+.vertical-menu {
+    font-size: var(--fs-header-nav);
+    font-weight: var(--fw-normal);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 2.8125rem;
+    color: var(--color-primary-background);
+    
+}
+
+.vertical-menu a:hover {
+    color: black;
+    padding-left: var(--spacer-6xl);
+}
+
+.btn {
+    font-size: var(--fs-header-nav);
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    background-color: var(--color-primary-background);
+    border-radius: .5rem;
+    padding: var(--spacer-sm) var(--spacer-3xl);
+    width: 10rem;
+    text-align: center;
+}
+
+.btn:hover, .btn:focus {
+    background-color: white;
+    color: var(---color-primary-background);
+}
+
+.veil { /* copy this to style text to middle */
+    background-color: var(--veil-color);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 3rem;
+}
+

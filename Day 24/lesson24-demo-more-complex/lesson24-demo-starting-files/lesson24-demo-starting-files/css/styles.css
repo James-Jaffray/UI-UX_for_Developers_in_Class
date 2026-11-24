@@ -1,0 +1,219 @@
+/* ---------- 1. Design tokens (CSS variables + dark mode) ---------- */
+:root {
+    --accent: #4f46e5;
+    --accent-2: #06b6d4;
+    --bg: #eef2ff;
+    --card: rgba(255, 255, 255, .7);
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #d9d9d9;
+    --danger: #e11d48;
+    --ring: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0f172a;
+        --card: rgba(30, 41, 59, .65);
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --border: #334155;
+    }
+}
+
+/* ---------- 2. Animated gradient background ---------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 45%),
+        radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--accent-2) 35%, transparent), transparent 45%),
+        var(--bg);
+    background-size: 150% 150%;
+    animation: drift 14s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+    to { background-position: 100% 100%; }
+}
+
+.inner-container {
+    max-width: 960px;
+    margin: 3rem auto 0;
+    padding: 1rem;
+    animation: rise .6s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(16px); }
+}
+
+/* ---------- 3. Gradient text + animated underline ---------- */
+h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    width: fit-content;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.35rem;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transform-origin: left;
+    animation: grow .8s .3s ease-out both;
+}
+
+@keyframes grow {
+    from { transform: scaleX(0); }
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: .75rem;
+    color: var(--text);
+}
+
+/* ---------- 4. Glassmorphism card ---------- */
+form {
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, .35);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .25);
+    padding: 2rem;
+    background: var(--card);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    transition: box-shadow .3s;
+}
+
+form:focus-within {
+    box-shadow: 0 20px 45px -12px rgba(79, 70, 229, .4);
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color: var(--muted);
+    border: none;
+    padding: .625rem;
+}
+
+span {
+    color: var(--danger);
+    font-weight: bold;
+}
+
+/* ---------- 5. Inputs: focus ring, smooth transitions, validation ---------- */
+fieldset input {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    height: 2.5rem;
+    padding: .5rem .75rem;
+    background: transparent;
+    color: var(--text);
+    transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+
+fieldset input:hover {
+    border-color: var(--accent);
+}
+
+fieldset input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--ring);
+    transform: translateY(-1px);
+}
+
+/* red only after the user has interacted — no :has/JS needed */
+fieldset input:user-invalid {
+    border-color: var(--danger);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--danger) 25%, transparent);
+}
+
+fieldset > div {
+    margin-bottom: 1.125rem;
+}
+
+/* label lights up when its input is focused (uses :has) */
+fieldset > div:has(input:focus) > label {
+    color: var(--accent);
+    transition: color .2s;
+}
+
+/* native radios/checkboxes in your accent color, no custom markup */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--accent);
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+}
+
+/* ---------- 6. Shiny gradient button with lift + shimmer ---------- */
+form input[type="submit"] {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    width: 9rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    box-shadow: 0 6px 16px -4px rgba(79, 70, 229, .6);
+    transition: transform .2s, box-shadow .2s;
+}
+
+form input[type="submit"]:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 12px 24px -6px rgba(79, 70, 229, .7);
+}
+
+form input[type="submit"]:active {
+    transform: translateY(0) scale(.98);
+}
+
+form input[type="submit"]:focus-visible {
+    outline: 3px solid var(--ring);
+    outline-offset: 3px;
+}
+
+form label:not(input[type="radio"] + label, input[type="checkbox"] + label) {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+/* ---------- 7. Responsive: stack fieldset columns on small screens ---------- */
+@media (max-width: 600px) {
+    fieldset { flex-direction: column; }
+    form { padding: 1.25rem; }
+    form input[type="submit"] { width: 100%; }
+}
+
+/* ---------- 8. Respect users who dislike motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

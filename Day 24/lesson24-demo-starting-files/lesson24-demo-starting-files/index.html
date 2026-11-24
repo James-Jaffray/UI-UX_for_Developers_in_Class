@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Shop | Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="inner-container">
+        <main>
+            <h1>Ice Cream Order</h1>
+            <form action="index.html" method="post">
+                <fieldset>
+                    <legend>Choose your Flavour</legend>
+                    <div>
+                        <label for="Vanilla">Vanilla</label>
+                        <input type="radio" name="flavor" id="Vanilla" value="Vanilla">
+                    </div>
+                    <div>
+                        <label for="Chocolate">Chocolate</label>
+                        <input type="radio" name="flavor" id="Chocolate" value="Chocolate">
+                    </div>
+                    <div>
+                        <label for="Cookies-N-Cream">Cookies N Cream</label>
+                        <input type="radio" name="flavor" id="Cookies-N-Cream" value="Cookies-N-Cream">
+                    </div>
+                    <div>
+                        <label for="Strawberry">Strawberry</label>
+                        <input type="radio" name="flavor" id="Strawberry" value="Strawberry">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Order Information</legend>
+                    <div>
+                        <label for="scoops">Pick the number of scoops (Limit of 1 - 5)<span>*Required</span></label>
+                        <input type="number" name="scoops" id="scoops" min="1" max="5" required>
+                    </div>
+                    <div>
+                        <label for="date">Pick up Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <div>
+                        <label for="name">Full Name<span>*Required</span></label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="password">Password (must be at least 10 characters)<span>*Required</span></label>
+                        <input type="text" name="password" id="password" minlength="10" required>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I agree to the terms and conditions <span>*Required</span></label>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Place Order">
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
